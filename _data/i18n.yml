@@ -1,0 +1,29 @@
+es:
+  menu: "Menú"
+  get_started: "Empezar"
+  contact:
+    name: "Nombre"
+    email: "Email"
+    message: "Mensaje"
+    send: "Enviar"
+    clear: "Limpiar"
+
+ca:
+  menu: "Menú"
+  get_started: "Comença"
+  contact:
+    name: "Nom"
+    email: "Email"
+    message: "Missatge"
+    send: "Envia"
+    clear: "Neteja"
+
+en:
+  menu: "Menu"
+  get_started: "Get Started"
+  contact:
+    name: "Name"
+    email: "Email"
+    message: "Message"
+    send: "Send Message"
+    clear: "Clear"

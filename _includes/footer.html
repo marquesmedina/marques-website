@@ -1,10 +1,13 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+
 <!-- Contact -->
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="https://formspree.io/f/xknlkojw" method="POST">
+			<form action="https://formspree.io/f/xvojdzko" method="POST">
 				<div class="field half first">
-					<label for="name">Name</label>
+					<label for="name">{{ t.contact.name }}</label>
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
@@ -16,8 +19,8 @@
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
+					<input type="submit" value="{{ t.contact.send }}" class="special" />
+					<input type="reset" value="{{ t.contact.clear }}" />
 				</ul>
 			</form>
 		</section>

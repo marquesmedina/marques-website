@@ -1,0 +1,15 @@
+---
+layout: home
+title: Home
+landing-title: 'Hi, my name is Márques'
+description: null
+image: null
+author: null
+show_tile: false
+
+lang: ca
+ref: home
+permalink: /ca/
+---
+
+I'm a Web Developer with 3+ Years of experience making websites. I have worked with PHP, Javascript, HTML5, CSS3, SASS, Node.js, Angular. You name it! You could see all my projects.

@@ -1,0 +1,34 @@
+html {
+    a{
+        &:hover{
+            color: black;
+        }
+
+    }
+
+    #main.alt {
+        background-color: pink;
+    }
+
+    #two{
+        background-color: pink;
+    }
+
+    #banner:after{
+        background-color: pink;
+    }
+
+    #contact{
+        background-color: pink;
+    }
+
+    #footer{
+        background-color: pink;
+
+        ul.copyright li{
+            color: white
+        }   
+       ∑
+    }
+    
+}

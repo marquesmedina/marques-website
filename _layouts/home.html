@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="{{ page.lang | default: site.default_lang }}">
+
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
 
 {% include head.html %}
 
@@ -21,7 +19,7 @@
             <div class="content">
                 <p style="text-transform: uppercase;">{{ site.description }}</p>
                 <ul class="actions">
-                    <li><a href="#one" class="button next scrolly">Get Started</a></li>
+                    <li><a href="#one" class="button next scrolly">{{ t.get_started }}</a></li>
                 </ul>
             </div>
         </div>
@@ -31,7 +29,7 @@
     <div id="main">
 
         <!-- One -->
-        {% include tiles.html %}
+        {% include tiles.html lang=lang %}
 
         <!-- Two -->
         <section id="two">
@@ -41,7 +39,7 @@
                 </header>
                 <p>{{ content }}</p>
                 <ul class="actions">
-                    <li><a href="landing.html" class="button next">Get Started</a></li>
+                    <li><a href="{{ '/landing/' | prepend: lang | prepend:'/' | relative_url }}" class="button next">{{ t.get_started }}</a></li>
                 </ul>
             </div>
         </section>
@@ -51,5 +49,4 @@
     {% include footer.html %}
 
 </body>
-
 </html>

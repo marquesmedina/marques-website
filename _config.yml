@@ -1,15 +1,15 @@
 # site settings
-title: Márques
+title: Márques Medina
 subtitle: by Márques
 email: rippleytrigger@gmail.com
 description: A responsive site designed by Márques <br /> and released under the Creative Commons.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Márques
-street_address: Rambla Onze de Septembre, 62-64
+street_address: 
 city: Barcelona
 state: Ca
-zip_code: 08030
+zip_code: 08019
 country: Spain
 phone: (+34) 692-661337
 
@@ -45,3 +45,21 @@ exclude:
 
 # To Allow Post Categories
 permalink: /:categories/:title
+
+default_lang: es
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "es"
+
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+  - scope:
+      path: "ca"
+    values:
+      lang: "ca"

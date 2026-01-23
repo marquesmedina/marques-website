@@ -3,8 +3,12 @@ layout: page
 title: Elements
 image: assets/images/pic01.jpg
 nav-menu: true
----
+show_tile: true
 
+lang: ca
+ref: elements
+permalink: /ca/elements
+---
 <!-- Main -->
 <div id="main" class="alt">
 
