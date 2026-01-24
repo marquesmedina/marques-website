@@ -3,7 +3,7 @@
 <section id="one" class="tiles">
   {% for p in site.html_pages %}
     {% if p.show_tile == true and p.lang == lang %}
-      <article>
+      <article class="{{ p.tile_class }}">
         <span class="image">
           <img src="{{ p.image | relative_url }}" alt="" />
         </span>
