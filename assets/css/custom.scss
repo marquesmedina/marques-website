@@ -1,9 +1,13 @@
 html {
     a{
         &:hover{
-            color: black;
+            color: gray !important;
         }
 
+    }
+
+    #header{
+        background-color: pink;
     }
 
     #main.alt {
@@ -28,7 +32,7 @@ html {
         ul.copyright li{
             color: white
         }   
-       ∑
+       
     }
     
 }
