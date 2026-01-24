@@ -11,11 +11,11 @@
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
-					<label for="email">Email</label>
+					<label for="email">{{ t.contact.email }}</label>
 					<input type="text" name="_replyto" id="email" />
 				</div>
 				<div class="field">
-					<label for="message">Message</label>
+					<label for="message">{{ t.contact.message }}</label>
 					<textarea name="message" id="message" rows="6"></textarea>
 				</div>
 				<ul class="actions">
@@ -28,21 +28,21 @@
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
+					<h3>{{ t.contact_info.email }}</h3>
 					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
+					<h3>{{ t.contact_info.phone }}</h3>
 					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
 				</div>
 			</section>
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
+					<h3>{{ t.contact_info.address }}</h3>
 					<span>
 					{% if site.street_address %}
 					    {{ site.street_address }}<br />

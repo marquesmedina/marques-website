@@ -1,6 +1,11 @@
 es:
   menu: "Menú"
   get_started: "Empezar"
+  contact_info:
+    email: "Email"
+    address: "Dirección"
+    phone: "Teléfono"
+
   contact:
     name: "Nombre"
     email: "Email"
@@ -17,6 +22,10 @@ ca:
     message: "Missatge"
     send: "Envia"
     clear: "Neteja"
+  contact_info:
+    email: "Email"
+    address: "Direcció"
+    phone: "Telefón"
 
 en:
   menu: "Menu"
@@ -27,3 +36,7 @@ en:
     message: "Message"
     send: "Send Message"
     clear: "Clear"
+  contact_info:
+    email: "Email"
+    address: "Address"
+    phone: "Phone"
