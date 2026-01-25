@@ -1,19 +1,37 @@
 es:
+
+  title: Márques Medina
+  subtitle: por Márques
+  description: >
+    Un sitio web responsive diseñado por Márques <br />
+    y publicado bajo licencia Creative Commons.
+  city: Barcelona
+  country: España
   menu: "Menú"
   get_started: "Empezar"
   contact_info:
     email: "Email"
     address: "Dirección"
     phone: "Teléfono"
-
   contact:
     name: "Nombre"
     email: "Email"
     message: "Mensaje"
     send: "Enviar"
     clear: "Limpiar"
-
+  copyright:
+    design: "Diseño"
+    jekyll_integration: "Integración de Jekyll"
+  home:
+    know: "Conoce a Márques"
 ca:
+  title: Márques Medina
+  subtitle: per Márques
+  description: >
+    Un lloc web responsive dissenyat per Márques <br />
+    i publicat sota llicència Creative Commons.
+  city: Barcelona
+  country: Catalunya
   menu: "Menú"
   get_started: "Comença"
   contact:
@@ -26,8 +44,20 @@ ca:
     email: "Email"
     address: "Direcció"
     phone: "Telefón"
+  copyright:
+    design: "Diseño"
+    jekyll_integration: "Integración de Jekyll"
+  home:
+    know: "Coneix a Márques"
 
 en:
+  title: Márques Medina
+  subtitle: by Márques
+  description: >
+    A responsive site designed by Márques <br />
+    and released under the Creative Commons.
+  city: Barcelona
+  country: Spain  
   menu: "Menu"
   get_started: "Get Started"
   contact:
@@ -40,3 +70,8 @@ en:
     email: "Email"
     address: "Address"
     phone: "Phone"
+  copyright:
+    design: "Diseño"
+    jekyll_integration: "Integración de Jekyll"
+  home:
+    know: "Know Márques"

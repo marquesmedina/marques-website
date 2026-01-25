@@ -81,10 +81,9 @@
 				{% endfor %}
 			</ul>
 			<ul class="copyright">
-				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
-				<li>Design: <a href="" target="_blank">Márques</a></li>
-				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
+				<li>&copy; {{ t.title }} {{ t.subtitle }}</li>
+				<li>{{ t.copyright.design }}: <a href="" target="_blank">{{ site.author }}</a></li>
+				<li>{{ t.copyright.jekyll_integration }}: <a href="{{ site.jekyll_integrator_url }}" target="_blank">{{ site.jekyll_integrator_name }}</a></li>
 			</ul>
 		</div>
 	</footer>

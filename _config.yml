@@ -1,11 +1,10 @@
 # site settings
-title: Márques Medina
-subtitle: by Márques
 email: rippleytrigger@gmail.com
-description: A responsive site designed by Márques <br /> and released under the Creative Commons.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Márques
+jekyll_integrator_name: Andrew Banchich
+jekyll_integrator_url: http://andrewbanchi.ch
 street_address: 
 city: Barcelona
 state: Ca

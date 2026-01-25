@@ -7,12 +7,18 @@
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
   <a href="{{ '/' | relative_url }}" class="logo">
-    <strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span>
+    <strong>{{ t.title }}</strong> <span>{{ t.subtitle }}</span>
   </a>
-  <nav>
-    <a href="{{ '/' | relative_url }}">ES</a>
-    <a href="{{ '/en/' | relative_url }}">EN</a>
-    <a href="{{ '/ca/' | relative_url }}">CA</a>
+  
+  <nav class="lang-switch">
+    <a href="{{ '/' | relative_url }}"
+     class="{% if lang == 'es' %}active{% endif %}">ES</a>
+
+    <a href="{{ '/en/' | relative_url }}"
+     class="{% if lang == 'en' %}active{% endif %}">EN</a>
+
+    <a href="{{ '/ca/' | relative_url }}"
+     class="{% if lang == 'ca' %}active{% endif %}">CA</a>
     <a href="#menu">{{ t.menu }}</a>
   </nav>
 </header>
