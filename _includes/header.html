@@ -1,6 +1,10 @@
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.i18n[lang] %}
+{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[current_lang] %}
+{% assign ref = page.ref %}
 
+{% assign es_page = site.pages | where: "ref", ref | where: "lang", "es" | first %}
+{% assign en_page = site.pages | where: "ref", ref | where: "lang", "en" | first %}
+{% assign ca_page = site.pages | where: "ref", ref | where: "lang", "ca" | first %}
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -9,17 +13,20 @@
   <a href="{{ '/' | relative_url }}" class="logo">
     <strong>{{ t.title }}</strong> <span>{{ t.subtitle }}</span>
   </a>
-  
-  <nav class="lang-switch">
-    <a href="{{ '/' | relative_url }}"
-     class="{% if lang == 'es' %}active{% endif %}">ES</a>
 
-    <a href="{{ '/en/' | relative_url }}"
-     class="{% if lang == 'en' %}active{% endif %}">EN</a>
+  <nav class="top-nav">
+    <div class="lang-switch">
+      <a href="{{ es_page.url | default: '/' | relative_url }}"
+        class="{% if current_lang == 'es' %}current{% endif %}">ES</a>
 
-    <a href="{{ '/ca/' | relative_url }}"
-     class="{% if lang == 'ca' %}active{% endif %}">CA</a>
-    <a href="#menu">{{ t.menu }}</a>
+      <a href="{{ en_page.url | default: '/en/' | relative_url }}"
+        class="{% if current_lang == 'en' %}current{% endif %}">EN</a>
+
+      <a href="{{ ca_page.url | default: '/ca/' | relative_url }}"
+        class="{% if current_lang == 'ca' %}current{% endif %}">CA</a>
+    </div>
+    
+    <a href="#menu" class="menu-toggle">Menu</a>
   </nav>
 </header>
 
@@ -28,13 +35,13 @@
   <ul class="links">
 
     {%- comment -%} Home (solo la del idioma actual) {%- endcomment -%}
-    {% assign home_page = site.pages | where:"layout","home" | where:"lang",lang | first %}
+    {% assign home_page = site.pages | where:"layout","home" | where:"lang",current_lang | first %}
     {% if home_page %}
       <li><a href="{{ home_page.url | relative_url }}">{{ home_page.title }}</a></li>
     {% endif %}
 
     {%- comment -%} Resto de páginas del menú, filtradas por idioma {%- endcomment -%}
-    {% assign nav_pages = site.pages | where:"nav-menu", true | where:"lang", lang %}
+    {% assign nav_pages = site.pages | where:"nav-menu", true | where:"lang", current_lang %}
     {% for p in nav_pages %}
       {% unless p.layout == "home" %}
         <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>

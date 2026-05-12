@@ -8,6 +8,9 @@ image: null
 author: null
 show_tile: true 
 
+description: 'All the Projects I worked on'
+image: assets/images/pic07.jpg
+
 lang: es
 ref: allprojects
 permalink: /projects/todos
