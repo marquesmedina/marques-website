@@ -1,15 +1,15 @@
 ---
 layout: allprojects
-title: All Projects
-landing-title: 'All Projects'
+title: Todos los Proyectos
+landing-title: 'Todos los Proyectos'
 nav-menu: true
 description: null
 image: null
 author: null
 show_tile: true 
 
-description: 'All the Projects I worked on'
-image: assets/images/pic07.jpg
+description: 'Todos los proyectos en los que he trabajado'
+image: assets/images/pic02.png
 
 lang: es
 ref: allprojects

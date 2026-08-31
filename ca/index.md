@@ -12,4 +12,5 @@ ref: home
 permalink: /ca/
 ---
 
-I'm a Web Developer with 3+ Years of experience making websites. I have worked with PHP, Javascript, HTML5, CSS3, SASS, Node.js, Angular. You name it! You could see all my projects.
+I'm a singer with 7 years of experience, comitted to become
+a professional.

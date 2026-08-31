@@ -3,7 +3,7 @@ layout: page
 title: Elements
 image: assets/images/pic01.jpg
 nav-menu: true
-show_tile: true
+show_tile: false
 
 lang: es
 ref: elements

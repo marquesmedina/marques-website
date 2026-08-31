@@ -12,5 +12,4 @@ ref: home
 permalink: /
 ---
 
-Soy un informático con experiencia de 5 años en programación y diseño web y deseo expandir 
-mis conocimientos en Quality Assurance
+Soy un cantante con 7 años de experiencia vocal y dedicade a convertirme en profesional.

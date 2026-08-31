@@ -1,5 +1,5 @@
 # site settings
-email: rippleytrigger@gmail.com
+email: music.marcmel@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Márques
@@ -21,14 +21,11 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/rippleytrigger
-  GitLab: https://gitlab.com/rippleytrigger
-  Google-Plus: 
-  Instagram:
+  SoundCloud: https://soundcloud.com/marquesmedina1
+  Instagram: https://www.instagram.com/marquesmedina1/
   LinkedIn: https://www.linkedin.com/in/rippleytrigger/
   Twitter: https://twitter.com/Rippleytrigger
-  Facebook:
-  Slack:
+  TikTok: https://www.tiktok.com/@marquesmedina1
 
 # build settings
 markdown: kramdown

@@ -31,19 +31,6 @@
         <!-- One -->
         {% include tiles.html lang=lang %}
 
-        <!-- Two -->
-        <section id="two">
-            <div class="inner">
-                <header class="major">
-                    <h2>{{ t.home.know }}!</h2>
-                </header>
-                <p>{{ content }}</p>
-                <ul class="actions">
-                    <li><a href="{{ '/landing/' | prepend: lang | prepend:'/' | relative_url }}" class="button next">{{ t.get_started }}</a></li>
-                </ul>
-            </div>
-        </section>
-
     </div>
 
     {% include footer.html %}

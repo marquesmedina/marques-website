@@ -32,36 +32,6 @@
 					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
 				</div>
 			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>{{ t.contact_info.phone }}</h3>
-					<a href="tel:{{ site.phone }}">{{ site.phone }}</a>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>{{ t.contact_info.address }}</h3>
-					<span>
-					{% if site.street_address %}
-					    {{ site.street_address }}<br />
-					{% endif %}
-					{% if site.city %}
-					    {{ site.city }},
-					{% endif %}
-					{% if site.state %}
-					    {{ site.state }} 
-					{% endif %}
-					{% if site.zip_code %}
-					    {{ site.zip_code }}<br />
-					{% endif %}
-					{% if site.country %}
-					    {{ site.country }}
-					{% endif %}
-					</span>
-				</div>
-			</section>
 		</section>
 	</div>
 </section>
@@ -73,7 +43,8 @@
 				{% for key_value in site.socials %}
 					{% if key_value[1] %}
 						<li>
-							<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+							<a href="{{ key_value[1] }}" class="" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+								<i class="fa-brands  fa-{{ key_value[0] | downcase }}"></i>
 								<span class="label">{{ key_value[0] }}</span>
 							</a>
 						</li>
